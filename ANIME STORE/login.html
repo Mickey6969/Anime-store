@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Website Login</title>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-image: url('image/1.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+        .ankit {
+            background-image: url("image/2.jpg");
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+            opacity: 0.5;
+        }
+        .ankit:hover{
+            background-image: url("image/2.jpg");
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+            opacity: 0.9;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            opacity: 0.2;
+        }
+        input{
+            border: dashed;
+            font-weight: bold;
+        }
+
+        input:hover{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            opacity: 0.9;
+            placeholder:bold    ;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff4500;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #e63900;
+        }
+        #username,#password{
+            width: 80%;
+        }
+        h1{
+            color: #1c0942;
+        }
+        .a{
+            text-decoration-color: red;
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <div class="ankit">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <u><a class="a" href="forget.html">forget password</a></u><br><br>
+            <button type="submit">Login</button>
+        </form>
+        <div class="signup">
+            <p>New here? <a href="resiter.html" style="color: #ff4500;">Create an account</a></p>
+        </div>
+        <a href="skiplayoutmain.html">skip</a>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Here you can add your login logic, e.g., sending data to a server
+            alert('Login seccesfully');
+        });
+    </script>
+</body>
+</html>

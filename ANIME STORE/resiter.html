@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        
+    </script>
+    <title>Anime Website Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-image: url('image/1.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+        .ankit {
+            background-image: url("image/2.jpg");
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 400px;
+            text-align: center;
+            opacity: 0.5;
+        }
+        .ankit:hover{
+           background-image: url("image/2.jpg");
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 400px;
+            text-align: center;
+            opacity: 0.9;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            opacity: 0.2;
+        }
+        input:hover{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            opacity: 0.9;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff4500;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+       
+        }
+        #username,#password{
+            width: 80%;
+        }
+        h1{
+            color: #1c0942;
+        }
+        #Frist-name,#Last-name{
+            width: 40%
+        }
+        #email-number,#password,#Gender,#date{
+            width: 88%;
+        }
+        .c{
+            margin-left: 150px;
+        }
+        .d{
+            margin-right: 76px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ankit">
+        <h1>Register</h1>
+        <form id="Register">
+            <input type="text" id="Frist-name" name="Frist name" placeholder="Frist name" required>
+            <input type="text" id="Last-name" name="Last-name" placeholder="Last-name" required>
+            <input type="text" name="email-number" id="email-number" placeholder="Mobile number or email address" required="">
+            <input type="text" name="Gender" id="Gender" placeholder="Enter your Gender">
+            <input type="password" id="password" name="password" placeholder="New Password" required>
+            <input type="date" name="dete" id="date" required>
+            <button type="submit" id="as">Register</button>
+        </form>     
+        <a href="login.html"><button class="d">Login</button></a>
+        <a class="c" align=left href="skiplayoutmain.html"><button>skip</button></a>
+    </div>
+    <script>
+        document.getElementById('Register').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Here you can add your login logic, e.g., sending data to a server
+            alert('Register seccesfully go to login page');
+        });
+        document.getElementById('as').addEventListener('click', function() {
+            window.location.href='lognlayoutmain.html';        // Opens in the same tab
+        // window.open('https://www.example.com', '_blank'); // Opens in a new tab
+    });
+
+    </script>
+    
+</body>
+</html>

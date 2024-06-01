@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>main</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background-color: #9687b0;
+}header {
+    background-color: #27242b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.q{
+	margin-top: -50%;
+	margin-left: 90%;
+}
+ #a {
+            display: none;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+            position: relative;
+        }
+        tr {
+            text-align: left;
+        }
+        table {
+            margin: 0 auto;
+            text-align: left;
+        }
+        #a {
+            display: none;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin-left: 80%;
+            background-size: cover;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff4500;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+<body>
+	<header>
+        <div class="logo">ANIME STORE HOME</div><br>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="C:\Users\sonka\OneDrive\Desktop\asd\main.js\chatlogin.html">Login/Register</a></li>
+                <a id="b" href="#"><img class="q" src="image/user.png">
+            </ul>
+        </nav>
+    </header>
+
+    <div id="a">
+        <img align="center" src="image/user.png" alt="User Image"><br><br>
+        <a href="login.html"><button>LOgin in</button></a><br><br><br>
+        <a href="resiter.html"><button>Resiter</button></a>
+        <a href="resiter.html"><button>Forget password</button></a>
+    </div><br>
+    <script type="text/javascript">
+    	document.getElementById('b').addEventListener('click', function() {
+    var hiddenDiv = document.getElementById('a');
+    if (hiddenDiv.style.display === 'none' || hiddenDiv.style.display === '') {
+        hiddenDiv.style.display = 'block';
+    } else {
+        hiddenDiv.style.display = 'none';
+    }
+});
+
+    </script>
+</body>
+</html>
