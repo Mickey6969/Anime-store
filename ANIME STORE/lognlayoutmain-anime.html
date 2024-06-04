@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>main</title>
+	 <link rel="stylesheet" href="C:\Users\sonka\OneDrive\Desktop\asd\main.js\main.css">
+	 <style type="text/css">
+        body{
+            background-image: url("image/logo.png");
+        }
+        #a {
+            display: none;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+            position: absolute;
+            top: 100px;
+            right: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+        tr {
+            text-align: left;
+        }
+        table {
+
+
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff4500;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background-color: #9687b0;
+}header {
+    background-color: #27242b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.q{
+	margin-top: -50%;
+	margin-left: 90%;
+}
+ #a {
+            display: none;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+            position: relative;
+        }
+        tr {
+            text-align: left;
+        }
+        table {
+            margin: 0 auto;
+            text-align: left;
+        }
+        #a {
+            display: none;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin-left: 80%;
+            background-size: cover;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff4500;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .anime-section {
+            padding: 20px;
+            text-align: center;
+        }        
+        .anime-section a {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: white;;
+            
+        }
+
+        .anime-section a img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .anime-section a:hover img {
+            transform: scale(1.5);
+        }
+        .a .btnmenu {
+	            font-size: 24px;
+	            padding: 10px 20px;
+	            color: white;
+	            border-radius: 12px;
+	            position: fixed;
+	            top: 20px;
+	            right: 20px;
+	            z-index: 1000;
+	 
+	        }
+
+	        .a .menu {
+	            height: 40%;
+	            width: 0;
+	            position: fixed;
+	            top: 0;
+	            right: 0;
+	            background-color: #333;
+	            overflow-x: hidden;
+	            transition: width 0.5s;
+	            padding-top: 60px;
+	            color: white;
+	            z-index: 999;
+	            border-radius: 12px;
+	        }
+
+	        .a .menu a {
+	            padding: 10px 15px;
+	            text-decoration: none;
+	            font-size: 22px;
+	            color: white;
+	            display: block;
+	            transition: background-color 0.3s;
+	        }
+
+	        .a .menu a:hover {
+	            background-color: #575757;
+	        }
+
+	        .a input[type="checkbox"] {
+	            display: none;
+	        }
+
+	        .a input[type="checkbox"]:checked ~ .menu {
+	            width: 250px;
+	        }
+
+	        .a table {
+	            margin: 20px;
+	        }
+</style>
+</head>
+<body>
+	<header>
+        <div class="logo">ANIME STORE ANIME</div><br>
+        <nav>
+            <ul>
+                <li><a href="loginlayoutmain-home.html">Home</a></li>
+                <li><a href="lognlayoutmain-anime.html">Anime</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="anime-section">
+        <input type="text" id="search-input" onkeyup="filterAnime()" placeholder="Search for anime...">
+        <h2>Popular Anime</h2>
+        <div id="ank">
+            <a href="https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood" target="_blank">
+            <img src="https://cdn.myanimelist.net/images/anime/1223/96541.jpg" alt="Fullmetal Alchemist: Brotherhood">
+            <div>Fullmetal Alchemist:<BR> Brotherhood</div>
+        </a>
+       <a href="#" target="_blank">
+        <img src="image/black cover.jpg" >
+        <div>BLACK COVERr</div>
+       </a>
+       <a href="#">
+        <img src="image/blter.jpg">
+        <div>BLACK BUTLER</div>
+       </a>
+       <a href="#">
+        <img src="image/bragan.jpg">
+        <div>DRAGAN BALL</div>
+       </a>
+       <a href="#">
+        <img src="image/buchhigrri.jpg">
+        <div>BUCHHIGIRI</div>
+       </a>
+       <a href="#">
+        <img src="image/buddies.jpg">
+        <div>BUDDY DADDIES</div>
+       </a>
+       <a href="#">
+        <img src="image/class.jpg">
+        <div>CLASS ROOM OF ALIGHT</div>
+       </a>
+       <a href="#">
+        <img src="image/dedective.jpg">
+        <div>THE DETECTIVE IS<br> DEAD</div>
+       </a>
+       <a href="#">
+        <img src="image/dog.jpg">
+        <div>BUNOU STRAY DOGS</div>
+       </a>
+       <a href="#">
+        <img src="image/horima.jpg">
+        <div>HORISIMA</div>
+       </a>
+       <a href="#">
+        <img src="image/hreo.jpg">
+        <div>MY HERO <br>ACADMIA</div>
+       </a>
+       <a href="#">
+        <img src="image/hunter.jpg">
+        <div>HUNTER</div>
+       </a><a href="#">
+        <img src="image/justu.jpg">
+        <div>JUJUSTU KAISEN</div>
+       </a>
+       <a href="#">
+        <img src="image/kaiju 8.jpg">
+        <div>KAIHU 8</div>
+       </a>
+       <a href="#">
+        <img src="image/naruto.jpg">
+        <div>NARUTO</div>
+       </a><a href="#">
+        <img src="image/lukism.jpg">
+        <div>LUKISM</div>
+       </a>
+       <a href="#">
+        <img src="image/mushle.jpg">
+        <div>THE MUSHLE <BR>AND MAGIC</div>
+       </a><a href="#">
+        <img src="image/rock.jpg">
+        <div>RECORD OF<BR> RANGNROCK</div>
+       </a>
+       <a href="#">
+        <img src="image/slayer.jpg">
+        <div>DEMON SLAYER</div>
+       </a>
+       <a href="#">
+        <img src="image/solo.jpg">
+        <div>SOLO LEVING</div>
+       </a>
+       <a href="#">
+        <img src="image/stone.jpg">
+        <div>DR. STONE</div>
+       </a>
+       <a href="#">
+        <img src="image/viral.jpg">
+        <div>VIRAL HIT</div>
+       </a>
+       <a href="#">
+        <img src="image/wind.jpg">
+        <div>WIND BREAKERR</div>
+       </a>
+       <a href="#">
+        <img src="image/zoom.jpg">
+        <div>ZOOM 100</div>
+       </a>
+       </div>
+    </div>
+    <div class="a">
+        <input type="checkbox" id="check">
+        <label for="check" class="btnmenu"><img src="image/user.png" alt=""></label>
+        <div id="menu" class="menu">
+            <br>
+            <table>
+                <tr>
+                    <th>CUSTOMER</th>
+                    <th>:</th>
+                    <th>USER</th>
+                </tr>
+                <tr>
+                    <td>NAME</td>
+                    <td>:</td>
+                    <td>Ankit Kumar Sonkar</td>
+                </tr>
+                <tr>
+                    <td>CLASS</td>
+                    <td>:</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>NUMBER</td>
+                    <td>:</td>
+                    <td>9838611763</td>
+                </tr>
+                <tr>
+                    <td>GENDER</td>
+                    <td>:</td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>DOB</td>
+                    <td>:</td>
+                    <td>01-06-2003</td>
+                </tr>
+            </table><br>
+            <a href="login.html"><button>Log out</button></a>
+        </div>
+    <script type="text/javascript">
+    function filterAnime() {
+            var input, filter, animeList, a, div, i, txtValue;
+            input = document.getElementById('search-input');
+            filter = input.value.toUpperCase();
+            animeList = document.getElementById("ank");
+            a = animeList.getElementsByTagName('a');
+            
+            for (i = 0; i < a.length; i++) {
+                div = a[i].getElementsByTagName("div")[0];
+                txtValue = div.textContent || div.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+            }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Store Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            
+            
+        }
+
+        #a {
+            display: none;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+            position: absolute;
+            top: 100px;
+            right: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+        .anime-section {
+            padding: 20px;
+            text-align: center;
+        }        
+
+        .anime-section a {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .anime-section a img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .anime-section a:hover img {
+            transform: scale(1.5);
+        }
+
+        .menu-button {
+            font-size: 24px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 12px;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            border: none;
+        }
+
+        .menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            transition: width 0.5s;
+            overflow-x: hidden;
+            padding-top: 60px;
+            z-index: 999;
+        }
+
+        .menu a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 22px;
+            color: white;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #575757;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked ~ .menu {
+            width: 250px;
+        }
+
+
+        .q {
+            width: 24px;
+            height: 24px;
+        }
+
+        .user-img {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+
+        .qw {
+            height: 100px;
+            width: 100%;
+            background-color: purple;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="qw">
+        <h1>Anime Store anime</h1>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-button">☰</label>
+        <div id="menu" class="menu">
+            <ul>
+                <li><a href="layoutmain-home.html">Home</a></li>
+                <li><a href="layoutmain-anime.html">Anime</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+            </ul>
+        </div>
+        <a id="b" href="#"><img class="q" src="image/user.png" style="position: absolute; right: 100px; top: 35px;"></a>
+    </div>
+
+    <a id="b" href="#" class="user-img"><img class="q" src="image/user.png"></a>
+
+    <div id="a">
+        <img src="image/user.png" alt="User Image"><br><br>
+        <a href="login.html"><button>Login</button></a><br><br>
+        <a href="resiter.html"><button>Register</button></a><br><br>
+        <a href="forget.html"><button>Forgot Password</button></a>
+    </div><br>
+
+    <div class="anime-section">
+        <input type="text" id="search-input" onkeyup="filterAnime()" placeholder="Search for anime...">
+        <h2>Popular Anime</h2>
+        <div id="ank">
+            <a href="https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood" target="_blank">
+            <img src="https://cdn.myanimelist.net/images/anime/1223/96541.jpg" alt="Fullmetal Alchemist: Brotherhood">
+            <div>Fullmetal Alchemist:<BR> Brotherhood</div>
+        </a>
+       <a href="#" target="_blank">
+        <img src="image/black cover.jpg" >
+        <div>BLACK COVERr</div>
+       </a>
+       <a href="#">
+        <img src="image/blter.jpg">
+        <div>BLACK BUTLER</div>
+       </a>
+       <a href="#">
+        <img src="image/bragan.jpg">
+        <div>DRAGAN BALL</div>
+       </a>
+       <a href="#">
+        <img src="image/buchhigrri.jpg">
+        <div>BUCHHIGIRI</div>
+       </a>
+       <a href="#">
+        <img src="image/buddies.jpg">
+        <div>BUDDY DADDIES</div>
+       </a>
+       <a href="#">
+        <img src="image/class.jpg">
+        <div>CLASS ROOM OF ALIGHT</div>
+       </a>
+       <a href="#">
+        <img src="image/dedective.jpg">
+        <div>THE DETECTIVE IS<br> DEAD</div>
+       </a>
+       <a href="#">
+        <img src="image/dog.jpg">
+        <div>BUNOU STRAY DOGS</div>
+       </a>
+       <a href="#">
+        <img src="image/horima.jpg">
+        <div>HORISIMA</div>
+       </a>
+       <a href="#">
+        <img src="image/hreo.jpg">
+        <div>MY HERO <br>ACADMIA</div>
+       </a>
+       <a href="#">
+        <img src="image/hunter.jpg">
+        <div>HUNTER</div>
+       </a><a href="#">
+        <img src="image/justu.jpg">
+        <div>JUJUSTU KAISEN</div>
+       </a>
+       <a href="#">
+        <img src="image/kaiju 8.jpg">
+        <div>KAIHU 8</div>
+       </a>
+       <a href="#">
+        <img src="image/naruto.jpg">
+        <div>NARUTO</div>
+       </a><a href="#">
+        <img src="image/lukism.jpg">
+        <div>LUKISM</div>
+       </a>
+       <a href="#">
+        <img src="image/mushle.jpg">
+        <div>THE MUSHLE <BR>AND MAGIC</div>
+       </a><a href="#">
+        <img src="image/rock.jpg">
+        <div>RECORD OF<BR> RANGNROCK</div>
+       </a>
+       <a href="#">
+        <img src="image/slayer.jpg">
+        <div>DEMON SLAYER</div>
+       </a>
+       <a href="#">
+        <img src="image/solo.jpg">
+        <div>SOLO LEVING</div>
+       </a>
+       <a href="#">
+        <img src="image/stone.jpg">
+        <div>DR. STONE</div>
+       </a>
+       <a href="#">
+        <img src="image/viral.jpg">
+        <div>VIRAL HIT</div>
+       </a>
+       <a href="#">
+        <img src="image/wind.jpg">
+        <div>WIND BREAKERR</div>
+       </a>
+       <a href="#">
+        <img src="image/zoom.jpg">
+        <div>ZOOM 100</div>
+       </a>
+       </div>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById('b').addEventListener('click', function() {
+            var hiddenDiv = document.getElementById('a');
+            if (hiddenDiv.style.display === 'none' || hiddenDiv.style.display === '') {
+                hiddenDiv.style.display = 'block';
+            } else {
+                hiddenDiv.style.display = 'none';
+            }
+        });
+        function filterAnime() {
+            var input, filter, animeList, a, div, i, txtValue;
+            input = document.getElementById('search-input');
+            filter = input.value.toUpperCase();
+            animeList = document.getElementById("ank");
+            a = animeList.getElementsByTagName('a');
+            
+            for (i = 0; i < a.length; i++) {
+                div = a[i].getElementsByTagName("div")[0];
+                txtValue = div.textContent || div.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
